@@ -1,0 +1,308 @@
+Foundation
+========
+          <MESSAGE TEXT="API CryptAcquireContextA in advapi32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CryptGenRandom in advapi32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CryptReleaseContext in advapi32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API DeregisterEventSource in advapi32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API RegCloseKey in advapi32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API RegCreateKeyExW in advapi32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API RegSetValueExW in advapi32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API RegisterEventSourceW in advapi32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API ReportEventW in advapi32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CopyFileW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateEventW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateFileMappingA in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateFileW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateMutexW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreatePipe in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateProcessW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateSemaphoreW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API CreateThread in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API ExpandEnvironmentStringsW in kernel32.dll
+is not supported for this application type. PocoFoundation.dll calls
+this API." />
+          <MESSAGE TEXT="API FindFirstFileW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetComputerNameW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetConsoleMode in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetCurrentDirectoryW in kernel32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetEnvironmentVariableW in kernel32.dll
+is not supported for this application type. PocoFoundation.dll calls
+this API." />
+          <MESSAGE TEXT="API GetExitCodeProcess in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetExitCodeThread in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetFileAttributesW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetFileType in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetLogicalDriveStringsW in kernel32.dll
+is not supported for this application type. PocoFoundation.dll calls
+this API." />
+          <MESSAGE TEXT="API GetLongPathNameW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetModuleFileNameW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetProcessTimes in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetStartupInfoW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetStdHandle in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetSystemInfo in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetTempPathW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetVersionExA in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetVersionExW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API InitializeCriticalSectionAndSpinCount in
+kernel32.dll is not supported for this application type.
+PocoFoundation.dll calls this API." />
+          <MESSAGE TEXT="API LoadLibraryExW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API LoadLibraryW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API MapViewOfFile in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API MoveFileW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API OpenProcess in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API SetEnvironmentVariableW in kernel32.dll
+is not supported for this application type. PocoFoundation.dll calls
+this API." />
+          <MESSAGE TEXT="API SetFilePointer in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API SetFileTime in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API SetThreadPriority in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API Sleep in kernel32.dll is not supported
+for this application type. PocoFoundation.dll calls this API." />
+          <MESSAGE TEXT="API TerminateProcess in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API TlsAlloc in kernel32.dll is not supported
+for this application type. PocoFoundation.dll calls this API." />
+          <MESSAGE TEXT="API TlsFree in kernel32.dll is not supported
+for this application type. PocoFoundation.dll calls this API." />
+          <MESSAGE TEXT="API TlsGetValue in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API TlsSetValue in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API WaitForMultipleObjects in kernel32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API WaitForSingleObject in kernel32.dll is
+not supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API WriteConsoleW in kernel32.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+          <MESSAGE TEXT="API GetAdaptersInfo in iphlpapi.dll is not
+supported for this application type. PocoFoundation.dll calls this
+API." />
+
+Util
+===
+         <MESSAGE TEXT="API ChangeServiceConfigA in advapi32.dll is
+not supported for this application type. PocoUtil.dll calls this API."
+/>
+          <MESSAGE TEXT="API CloseServiceHandle in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API ControlService in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API CreateServiceW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API DeleteService in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API OpenSCManagerA in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API OpenServiceW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API QueryServiceConfigW in advapi32.dll is
+not supported for this application type. PocoUtil.dll calls this API."
+/>
+          <MESSAGE TEXT="API QueryServiceStatus in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegCloseKey in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegCreateKeyExW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegDeleteKeyW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegDeleteValueW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegEnumKeyExW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegEnumValueW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegOpenKeyExW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegQueryInfoKeyA in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegQueryValueExW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegSetValueExW in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API RegisterServiceCtrlHandlerW in
+advapi32.dll is not supported for this application type. PocoUtil.dll
+calls this API." />
+          <MESSAGE TEXT="API SetServiceStatus in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API StartServiceA in advapi32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API StartServiceCtrlDispatcherW in
+advapi32.dll is not supported for this application type. PocoUtil.dll
+calls this API." />
+          <MESSAGE TEXT="API ExpandEnvironmentStringsW in kernel32.dll
+is not supported for this application type. PocoUtil.dll calls this
+API." />
+          <MESSAGE TEXT="API GetModuleFileNameW in kernel32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API GetStdHandle in kernel32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API LoadLibraryW in kernel32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API LocalAlloc in kernel32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API LocalFree in kernel32.dll is not
+supported for this application type. PocoUtil.dll calls this API." />
+          <MESSAGE TEXT="API SetConsoleCtrlHandler in kernel32.dll is
+not supported for this application type. PocoUtil.dll calls this API."
+/>
+---
+
+Net
+===
+          <MESSAGE TEXT="API WSACleanup in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API WSAGetLastError in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API WSAStartup in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API __WSAFDIsSet in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API accept in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API bind in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API closesocket in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API connect in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API freeaddrinfo in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getaddrinfo in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API gethostname in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getnameinfo in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getpeername in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getservbyname in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getsockname in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API getsockopt in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API htons in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API inet_addr in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API ioctlsocket in ws2_32.dll is not
+supported for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API listen in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API ntohl in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API ntohs in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API recv in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API recvfrom in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API select in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API send in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API sendto in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API setsockopt in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API shutdown in ws2_32.dll is not supported
+for this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API socket in ws2_32.dll is not supported for
+this application type. PocoNet.dll calls this API." />
+          <MESSAGE TEXT="API GetAdaptersInfo in iphlpapi.dll is not
+supported for this application type. PocoNet.dll calls this API." />
