@@ -1097,22 +1097,12 @@ NetworkInterface::Map NetworkInterface::map(bool ipOnly, bool upOnly)
 		ifIndex = pAddress->Ipv6IfIndex;
 	#elif (_WIN32_WINNT >= 0x0501) && (NTDDI_VERSION >= 0x05010100) // Win XP SP1
 		#if defined (IP_ADAPTER_IPV6_ENABLED) // Vista
-			if(osvi.dwMajorVersion>=6)//vista
+			if ((pAddress->Flags & IP_ADAPTER_IPV6_ENABLED) &&
+				(osvi.dwMajorVersion >= 5) &&
+				(osvi.dwMinorVersion >= 1) &&
+				(osvi.dwBuildNumber >=1))
 			{
-				if ((pAddress->Flags & IP_ADAPTER_IPV6_ENABLED) &&
-					(osvi.dwMajorVersion >= 5) &&
-					(osvi.dwMinorVersion >= 1) &&
-					(osvi.dwBuildNumber >=1))
-				{
-					ifIndex = pAddress->Ipv6IfIndex;
-				}
-			}
-			else if ((osvi.dwMajorVersion >= 5) &&
-					(osvi.dwMinorVersion >= 1) &&
-					(osvi.dwBuildNumber >= 1))
-				{
-					ifIndex = pAddress->Ipv6IfIndex;
-				}
+				ifIndex = pAddress->Ipv6IfIndex;
 			}
 		#else // !defined(IP_ADAPTER_IPV6_ENABLED)
 			if ((osvi.dwMajorVersion >= 5) &&
@@ -1126,14 +1116,7 @@ NetworkInterface::Map NetworkInterface::map(bool ipOnly, bool upOnly)
 #endif // POCO_HAVE_IPv6
 
 #if defined (IP_ADAPTER_IPV4_ENABLED)
-		if(osvi.dwMajorVersion>=6)
-		{//vista
-			if (pAddress->Flags & IP_ADAPTER_IPV4_ENABLED)
-			{
-				ifIndex = pAddress->IfIndex;
-			}
-		}
-		else
+		if (pAddress->Flags & IP_ADAPTER_IPV4_ENABLED)
 		{
 			ifIndex = pAddress->IfIndex;
 		}
@@ -1222,15 +1205,8 @@ NetworkInterface::Map NetworkInterface::map(bool ipOnly, bool upOnly)
 #elif (_WIN32_WINNT >= 0x0501) && (NTDDI_VERSION >= 0x05010100) // Win XP SP1
 						ULONG prefixLength = 0;
 	#if (_WIN32_WINNT >= 0x0600) // Vista and newer
-						if (osvi.dwMajorVersion >= 6)
-						{
-							prefixLength = pUniAddr->OnLinkPrefixLength;
-							broadcastAddress = getBroadcastAddress(pAddress->FirstPrefix, address);
-						}
-						else
-						{
-							broadcastAddress = getBroadcastAddress(pAddress->FirstPrefix, address, &prefixLength);
-						}
+						prefixLength = pUniAddr->OnLinkPrefixLength;
+						broadcastAddress = getBroadcastAddress(pAddress->FirstPrefix, address);
 	#else
 						broadcastAddress = getBroadcastAddress(pAddress->FirstPrefix, address, &prefixLength);
 	#endif
