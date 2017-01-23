@@ -39,7 +39,7 @@ DigestEngine::~DigestEngine()
 
 int DigestEngine::nid() const
 {
-	return EVP_MD_nid(_ctx->digest);
+	return EVP_MD_type(_ctx->digest);
 }
 
 std::size_t DigestEngine::digestLength() const

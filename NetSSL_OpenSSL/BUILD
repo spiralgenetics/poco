@@ -48,5 +48,6 @@ cc_library(
     deps = [
         "//Crypto",
         "//Net",
+        "@boringssl//:ssl",
     ],
 )
