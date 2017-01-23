@@ -18,15 +18,15 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
-#include "NamedEvent_WIN32U.cpp"
+#include "NamedEvent_WIN32U.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "NamedEvent_WIN32.cpp"
+#include "NamedEvent_WIN32.inc"
 #elif defined(POCO_ANDROID)
-#include "NamedEvent_Android.cpp"
+#include "NamedEvent_Android.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "NamedEvent_UNIX.cpp"
+#include "NamedEvent_UNIX.inc"
 #else
-#include "NamedEvent_VMS.cpp"
+#include "NamedEvent_VMS.inc"
 #endif
 
 

@@ -18,11 +18,11 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
-#include "Event_WIN32.cpp"
+#include "Event_WIN32.inc"
 #elif defined(POCO_VXWORKS)
-#include "Event_VX.cpp"
+#include "Event_VX.inc"
 #else
-#include "Event_POSIX.cpp"
+#include "Event_POSIX.inc"
 #endif
 
 

@@ -59,18 +59,18 @@ namespace
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
 #if defined(_WIN32_WCE)
-#include "Process_WINCE.cpp"
+#include "Process_WINCE.inc"
 #else
-#include "Process_WIN32U.cpp"
+#include "Process_WIN32U.inc"
 #endif
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "Process_WIN32.cpp"
+#include "Process_WIN32.inc"
 #elif defined(POCO_VXWORKS)
-#include "Process_VX.cpp"
+#include "Process_VX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "Process_UNIX.cpp"
+#include "Process_UNIX.inc"
 #else
-#include "Process_VMS.cpp"
+#include "Process_VMS.inc"
 #endif
 
 

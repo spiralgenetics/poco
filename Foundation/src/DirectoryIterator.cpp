@@ -18,13 +18,13 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
-#include "DirectoryIterator_WIN32U.cpp"
+#include "DirectoryIterator_WIN32U.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "DirectoryIterator_WIN32.cpp"
+#include "DirectoryIterator_WIN32.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "DirectoryIterator_UNIX.cpp"
+#include "DirectoryIterator_UNIX.inc"
 #else
-#include "DirectoryIterator_VMS.cpp"
+#include "DirectoryIterator_VMS.inc"
 #endif
 
 

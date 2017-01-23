@@ -19,14 +19,14 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "Mutex_WINCE.cpp"
+#include "Mutex_WINCE.inc"
 #else
-#include "Mutex_WIN32.cpp"
+#include "Mutex_WIN32.inc"
 #endif
 #elif defined(POCO_VXWORKS)
-#include "Mutex_VX.cpp"
+#include "Mutex_VX.inc"
 #else
-#include "Mutex_POSIX.cpp"
+#include "Mutex_POSIX.inc"
 #endif
 
 

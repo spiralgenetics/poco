@@ -21,19 +21,19 @@
 
 
 #if defined(POCO_OS_FAMILY_VMS)
-#include "Environment_VMS.cpp"
+#include "Environment_VMS.inc"
 #elif defined(POCO_VXWORKS)
-#include "Environment_VX.cpp"
+#include "Environment_VX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "Environment_UNIX.cpp"
+#include "Environment_UNIX.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
 #if defined(_WIN32_WCE)
-#include "Environment_WINCE.cpp"
+#include "Environment_WINCE.inc"
 #else
-#include "Environment_WIN32U.cpp"
+#include "Environment_WIN32U.inc"
 #endif
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "Environment_WIN32.cpp"
+#include "Environment_WIN32.inc"
 #endif
 
 

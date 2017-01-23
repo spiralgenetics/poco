@@ -1,0 +1,28 @@
+# Generate dumps of the makefiles in parsable format;
+# this contains which libraries contain which source files
+for i in */.;do (cd $i; make -n -p > make-n-p) & done
+
+# bazel BUILD files generated using the following process from the top level:
+
+# Move .cpp files that are #included from other .cpp files
+# to .inc files:
+
+egrep '^#include.*cpp"' */src/*.cpp | sed 's@src/.* "@src/@' | sed 's@"@@' | while read a;do git mv $a `dirname $a`/`basename $a .cpp`.inc;done
+
+# And edit references
+sed -i 's@^#include "\(.*\)\.cpp"@#include "\1.inc"@' */src/*.cpp
+
+# and for .c and .cc files
+egrep '^#include.*cc""' */src/*.cc | sed 's@src/.* "@src/@' | sed 's@"@@' | while read a;do git mv $a `dirname $a`/`basename $a .cc`.inc;done
+egrep '^#include.*c"' */src/*.c | sed 's@src/.* "@src/@' | sed 's@"@@' | while read a;do git mv $a `dirname $a`/`basename $a .c`.inc;done
+
+sed -i 's@^#include "\(.*\)\.c"@#include "\1.inc"@' */src/*.cpp
+sed -i 's@^#include "\(.*\)\.c"@#include "\1.inc"@' */src/*.cpp
+
+# Generate BUILD files based on the make-n-p dumps
+spiral/mkbuildfiles.pl
+
+# Prettify build files
+find . -name BUILD | xargs buildifier -v
+
+

@@ -18,15 +18,15 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
-#include "NamedMutex_WIN32U.cpp"
+#include "NamedMutex_WIN32U.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "NamedMutex_WIN32.cpp"
+#include "NamedMutex_WIN32.inc"
 #elif defined(POCO_ANDROID)
-#include "NamedMutex_Android.cpp"
+#include "NamedMutex_Android.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "NamedMutex_UNIX.cpp"
+#include "NamedMutex_UNIX.inc"
 #else
-#include "NamedMutex_VMS.cpp"
+#include "NamedMutex_VMS.inc"
 #endif
 
 

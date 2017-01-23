@@ -21,18 +21,18 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
 #if defined(_WIN32_WCE)
-#include "File_WINCE.cpp"
+#include "File_WINCE.inc"
 #else
-#include "File_WIN32U.cpp"
+#include "File_WIN32U.inc"
 #endif
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "File_WIN32.cpp"
+#include "File_WIN32.inc"
 #elif defined(POCO_VXWORKS)
-#include "File_VX.cpp"
+#include "File_VX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "File_UNIX.cpp"
+#include "File_UNIX.inc"
 #else
-#include "File_VMS.cpp"
+#include "File_VMS.inc"
 #endif
 
 

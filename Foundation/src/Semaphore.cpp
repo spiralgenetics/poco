@@ -18,11 +18,11 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
-#include "Semaphore_WIN32.cpp"
+#include "Semaphore_WIN32.inc"
 #elif defined(POCO_VXWORKS)
-#include "Semaphore_VX.cpp"
+#include "Semaphore_VX.inc"
 #else
-#include "Semaphore_POSIX.cpp"
+#include "Semaphore_POSIX.inc"
 #endif
 
 

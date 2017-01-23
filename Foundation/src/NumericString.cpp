@@ -20,14 +20,14 @@
 // +++ double conversion +++
 #define UNREACHABLE poco_bugcheck
 #define UNIMPLEMENTED poco_bugcheck
-#include "diy-fp.cc"
-#include "cached-powers.cc"
-#include "bignum-dtoa.cc"
-#include "bignum.cc"
-#include "fast-dtoa.cc"
-#include "fixed-dtoa.cc"
-#include "strtod.cc"
-#include "double-conversion.cc"
+#include "diy-fp.inc"
+#include "cached-powers.inc"
+#include "bignum-dtoa.inc"
+#include "bignum.inc"
+#include "fast-dtoa.inc"
+#include "fixed-dtoa.inc"
+#include "strtod.inc"
+#include "double-conversion.inc"
 // --- double conversion ---
 
 #include "Poco/NumericString.h"

@@ -17,9 +17,9 @@
 #include "Poco/FileStream.h"
 #include "Poco/Exception.h"
 #if defined(POCO_OS_FAMILY_WINDOWS)
-#include "FileStream_WIN32.cpp"
+#include "FileStream_WIN32.inc"
 #else
-#include "FileStream_POSIX.cpp"
+#include "FileStream_POSIX.inc"
 #endif
 
 
