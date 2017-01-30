@@ -5,3 +5,8 @@ spiral_git_repository(
     commit = "refs/remotes/origin/spiral-boringssl",
     remote = "git@bitbucket.org:sgteam/boringssl.git",
 )
+
+bind(
+    name = "openssl",
+    actual = "@boringssl//:ssl",
+)
