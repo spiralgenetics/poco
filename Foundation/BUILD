@@ -199,5 +199,6 @@ cc_library(
         "-DPOCO_HAVE_FD_EPOLL",
     ],
     includes = ["include"],
+    linkopts = ["-lrt"],
     visibility = ["//visibility:public"],
 )
