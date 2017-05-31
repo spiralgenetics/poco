@@ -189,6 +189,9 @@ cc_library(
     ],
     hdrs = glob(["include/**/*.h"]),
     copts = [
+        "-Wno-unused-function",
+        "-Wno-deprecated-declarations",
+        "-Wno-strict-overflow",
         "-Wno-sign-compare",
         "-Wno-unknown-pragmas",
         "-D_XOPEN_SOURCE=500",
