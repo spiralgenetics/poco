@@ -194,6 +194,7 @@ cc_library(
         "-Wno-strict-overflow",
         "-Wno-sign-compare",
         "-Wno-unknown-pragmas",
+        "-Wno-unused-variable",
         "-D_XOPEN_SOURCE=500",
         "-D_REENTRANT",
         "-D_THREAD_SAFE",
