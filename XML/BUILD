@@ -79,6 +79,8 @@ cc_library(
     copts = [
         "-Wno-sign-compare",
         "-Wno-unknown-pragmas",
+        "-Wno-unused-variable",
+        "-Wno-unused-function",
         "-D_XOPEN_SOURCE=500",
         "-D_REENTRANT",
         "-D_THREAD_SAFE",
