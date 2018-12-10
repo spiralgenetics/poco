@@ -16,11 +16,11 @@
 
 
 #if defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
-#include "LogFile_WIN32U.cpp"
+#include "LogFile_WIN32U.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "LogFile_WIN32.cpp"
+#include "LogFile_WIN32.inc"
 #else
-#include "LogFile_STD.cpp"
+#include "LogFile_STD.inc"
 #endif
 
 

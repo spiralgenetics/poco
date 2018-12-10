@@ -24,15 +24,15 @@
 
 
 #if defined(POCO_OS_FAMILY_UNIX)
-#include "Path_UNIX.cpp"
+#include "Path_UNIX.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
 #if defined(_WIN32_WCE)
-#include "Path_WINCE.cpp"
+#include "Path_WINCE.inc"
 #else
-#include "Path_WIN32U.cpp"
+#include "Path_WIN32U.inc"
 #endif
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "Path_WIN32.cpp"
+#include "Path_WIN32.inc"
 #endif
 
 

@@ -22,14 +22,14 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "Thread_WINCE.cpp"
+#include "Thread_WINCE.inc"
 #else
-#include "Thread_WIN32.cpp"
+#include "Thread_WIN32.inc"
 #endif
 #elif defined(POCO_VXWORKS)
-#include "Thread_VX.cpp"
+#include "Thread_VX.inc"
 #else
-#include "Thread_POSIX.cpp"
+#include "Thread_POSIX.inc"
 #endif
 
 

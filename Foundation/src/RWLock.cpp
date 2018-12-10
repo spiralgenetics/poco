@@ -17,16 +17,16 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "RWLock_WINCE.cpp"
+#include "RWLock_WINCE.inc"
 #else
-#include "RWLock_WIN32.cpp"
+#include "RWLock_WIN32.inc"
 #endif
 #elif POCO_OS == POCO_OS_ANDROID
-#include "RWLock_Android.cpp"
+#include "RWLock_Android.inc"
 #elif defined(POCO_VXWORKS)
-#include "RWLock_VX.cpp"
+#include "RWLock_VX.inc"
 #else
-#include "RWLock_POSIX.cpp"
+#include "RWLock_POSIX.inc"
 #endif
 
 

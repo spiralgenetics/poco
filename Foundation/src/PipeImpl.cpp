@@ -17,12 +17,12 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "PipeImpl_DUMMY.cpp"
+#include "PipeImpl_DUMMY.inc"
 #else
-#include "PipeImpl_WIN32.cpp"
+#include "PipeImpl_WIN32.inc"
 #endif
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "PipeImpl_POSIX.cpp"
+#include "PipeImpl_POSIX.inc"
 #else
-#include "PipeImpl_DUMMY.cpp"
+#include "PipeImpl_DUMMY.inc"
 #endif

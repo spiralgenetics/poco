@@ -17,15 +17,15 @@
 
 
 #if defined(hpux) || defined(_hpux)
-#include "SharedLibrary_HPUX.cpp"
+#include "SharedLibrary_HPUX.inc"
 #elif defined(POCO_VXWORKS)
-#include "SharedLibrary_VX.cpp"
+#include "SharedLibrary_VX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "SharedLibrary_UNIX.cpp"
+#include "SharedLibrary_UNIX.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS) && defined(POCO_WIN32_UTF8)
-#include "SharedLibrary_WIN32U.cpp"
+#include "SharedLibrary_WIN32U.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "SharedLibrary_WIN32.cpp"
+#include "SharedLibrary_WIN32.inc"
 #endif
 
 

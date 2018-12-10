@@ -18,14 +18,14 @@
 
 #if defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "Timezone_WINCE.cpp"
+#include "Timezone_WINCE.inc"
 #else
-#include "Timezone_WIN32.cpp"
+#include "Timezone_WIN32.inc"
 #endif
 #elif defined(POCO_VXWORKS)
-#include "Timezone_VX.cpp"
+#include "Timezone_VX.inc"
 #else
-#include "Timezone_UNIX.cpp"
+#include "Timezone_UNIX.inc"
 #endif
 
 

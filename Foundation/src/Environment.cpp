@@ -19,14 +19,14 @@
 
 
 #if defined(POCO_VXWORKS)
-#include "Environment_VX.cpp"
+#include "Environment_VX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "Environment_UNIX.cpp"
+#include "Environment_UNIX.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
 #if defined(_WIN32_WCE)
-#include "Environment_WINCE.cpp"
+#include "Environment_WINCE.inc"
 #else
-#include "Environment_WIN32.cpp"
+#include "Environment_WIN32.inc"
 #endif
 #endif
 

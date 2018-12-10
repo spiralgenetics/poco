@@ -18,19 +18,19 @@
 
 
 #if defined(POCO_NO_FPENVIRONMENT)
-#include "FPEnvironment_DUMMY.cpp"
+#include "FPEnvironment_DUMMY.inc"
 #elif defined(__osf__)
-#include "FPEnvironment_DEC.cpp"
+#include "FPEnvironment_DEC.inc"
 #elif defined(sun) || defined(__sun)
-#include "FPEnvironment_SUN.cpp"
+#include "FPEnvironment_SUN.inc"
 #elif defined(__QNX__)
-#include "FPEnvironment_QNX.cpp"
+#include "FPEnvironment_QNX.inc"
 #elif defined(POCO_OS_FAMILY_UNIX)
-#include "FPEnvironment_C99.cpp"
+#include "FPEnvironment_C99.inc"
 #elif defined(POCO_OS_FAMILY_WINDOWS)
-#include "FPEnvironment_WIN32.cpp"
+#include "FPEnvironment_WIN32.inc"
 #else
-#include "FPEnvironment_DUMMY.cpp"
+#include "FPEnvironment_DUMMY.inc"
 #endif
 
 
