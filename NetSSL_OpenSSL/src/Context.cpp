@@ -198,7 +198,7 @@ void Context::useCertificate(const Poco::Crypto::X509Certificate& certificate)
 
 void Context::addChainCertificate(const Poco::Crypto::X509Certificate& certificate)
 {
-	int errCode = SSL_CTX_add_extra_chain_cert(_pSSLContext, certificate.certificate());
+	int errCode = SSL_CTX_add_extra_chain_cert(_pSSLContext, (X509*)certificate.certificate());
 	if (errCode != 1)
 	{
 		std::string msg = Utility::getLastError();
