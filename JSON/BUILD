@@ -3,7 +3,8 @@ cc_library(
     srcs = glob([
         "src/*.h",
         "src/*.inc",
-	"src/*.cpp"
+	"src/*.cpp",
+	"src/*.c"
     ]),
     hdrs = glob(["include/**/*.h"]),
     copts = [
