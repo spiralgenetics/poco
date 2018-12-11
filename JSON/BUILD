@@ -3,19 +3,8 @@ cc_library(
     srcs = glob([
         "src/*.h",
         "src/*.inc",
-    ]) + [
-        "src/Array.cpp",
-        "src/Object.cpp",
-        "src/Parser.cpp",
-        "src/Handler.cpp",
-        "src/Stringifier.cpp",
-        "src/ParseHandler.cpp",
-        "src/PrintHandler.cpp",
-        "src/Query.cpp",
-        "src/JSONException.cpp",
-        "src/Template.cpp",
-        "src/TemplateCache.cpp",
-    ],
+	"src/*.cpp"
+    ]),
     hdrs = glob(["include/**/*.h"]),
     copts = [
         "-Wno-sign-compare",

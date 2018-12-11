@@ -3,22 +3,8 @@ cc_library(
     srcs = glob([
         "src/*.h",
         "src/*.inc",
-    ]) + [
-        "src/Cipher.cpp",
-        "src/CipherFactory.cpp",
-        "src/CipherImpl.cpp",
-        "src/CipherKey.cpp",
-        "src/CipherKeyImpl.cpp",
-        "src/CryptoStream.cpp",
-        "src/CryptoTransform.cpp",
-        "src/RSACipherImpl.cpp",
-        "src/RSAKey.cpp",
-        "src/RSAKeyImpl.cpp",
-        "src/RSADigestEngine.cpp",
-        "src/DigestEngine.cpp",
-        "src/X509Certificate.cpp",
-        "src/OpenSSLInitializer.cpp",
-    ],
+	"src/*.cpp"
+    ]),
     hdrs = glob(["include/**/*.h"]),
     copts = [
         "-Wno-sign-compare",
