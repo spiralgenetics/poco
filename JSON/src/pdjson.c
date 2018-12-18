@@ -154,7 +154,8 @@ static void init(json_stream *json)
 static enum json_type
 is_match(json_stream *json, const char *pattern, enum json_type type)
 {
-    for (const char *p = pattern; *p; p++)
+    const char *p = pattern;
+    for (; *p; p++)
         if (*p != json->source.get(&json->source))
             return JSON_ERROR;
     return type;
@@ -253,8 +254,8 @@ read_unicode_cp(json_stream *json)
 {
     long cp = 0;
     int shift = 12;
-
-    for (size_t i = 0; i < 4; i++) {
+    size_t i;
+    for (i = 0; i < 4; i++) {
         int c = json->source.get(&json->source);
         int hc;
 
@@ -464,7 +465,8 @@ read_utf8(json_stream* json, int next_char)
 
     char buffer[4];
     buffer[0] = next_char;
-    for (int i = 1; i < count; ++i)
+    int i;
+    for (i = 1; i < count; ++i)
     {
         buffer[i] = json->source.get(&json->source);;
     }
@@ -475,7 +477,7 @@ read_utf8(json_stream* json, int next_char)
         return -1;
     }
 
-    for (int i = 0; i < count; ++i)
+    for (i = 0; i < count; ++i)
     {
         if (pushchar(json, buffer[i]) != 0)
             return -1;
