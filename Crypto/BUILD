@@ -3,12 +3,13 @@ cc_library(
     srcs = glob([
         "src/*.h",
         "src/*.inc",
-	"src/*.cpp"
+        "src/*.cpp",
     ]),
     hdrs = glob(["include/**/*.h"]),
     copts = [
         "-Wno-sign-compare",
         "-Wno-unknown-pragmas",
+        "-Wno-deprecated-declarations",
         "-D_XOPEN_SOURCE=500",
         "-D_REENTRANT",
         "-D_THREAD_SAFE",

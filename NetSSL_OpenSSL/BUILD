@@ -36,6 +36,7 @@ cc_library(
     copts = [
         "-Wno-sign-compare",
         "-Wno-unknown-pragmas",
+        "-Wno-deprecated-declarations",
         "-D_XOPEN_SOURCE=500",
         "-D_REENTRANT",
         "-D_THREAD_SAFE",
